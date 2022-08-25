@@ -1,0 +1,166 @@
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav {
+    font-family: 'Kalam', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 8px;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.brand i {
+    width: 44px;
+    padding: 0 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 90vh;
+    background-color: black;
+    color: white;
+    font-family: 'Kalam', cursive;
+    display: flex;
+    margin: 23px auto;
+    width: 90%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(../images/bg.jpg);
+}
+
+.bottom {
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 50px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    color: black;
+    margin: 12px 0;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img {
+    width: 44px;
+    margin: 0 23px;
+    border-radius: 22px;
+    object-fit: cover;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    font-family: 'Kalam', cursive;
+    position: absolute;
+    left: 10vw;
+}
+
+.songInfo img {
+    width: 42px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    margin: 0 8px;
+}
+
+.dev-team {
+    margin: 12px;
+    padding: 24px;
+    border: 10px solid black;
+    border-radius: 9px;
+}
+
+.dev {
+    margin: 12px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dev-img {
+    margin: 12px;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    object-fit: cover;
+}
+
+.dev-info {
+    margin: 16px;
+    padding: 100px;
+    font-size: 2rem;
+    font-family: 'kalam', cursive;
+
+}
