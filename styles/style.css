@@ -83,13 +83,6 @@ a:hover {
     font-size: 1.3rem;
 }
 
-#specialized {
-    display: none;
-}
-
-#specialized:target {
-    display: flex;
-}
 
 .container {
     min-height: 90vh;

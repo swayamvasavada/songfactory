@@ -9,6 +9,9 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 let songItemPlayBtn = Array.from(document.getElementsByClassName('songItemPlay'));
 let nextSongBtn = document.getElementById('next');
 let prevSongBtn = document.getElementById('prev');
+let specialized = document.getElementById('specialized');
+let bottomInfo = document.getElementById('bottomInfo');
+let flag;
 
 let songs = [
     { songName: "Salam-e-Ishq", filePath: "song/1.mp3", coverPath: "./images/covers/1.jpg" },
