@@ -14,16 +14,16 @@ let bottomInfo = document.getElementById('bottomInfo');
 let flag;
 
 let songs = [
-    { songName: "Salam-e-Ishq", filePath: "song/1.mp3", coverPath: "./images/covers/1.jpg" },
-    { songName: "Second-Salam-e-Ishq", filePath: "song/2.mp3", coverPath: "./images/covers/2.jpg" },
-    { songName: "Third-Salam-e-Ishq", filePath: "song/3.mp3", coverPath: "./images/covers/3.jpg" },
-    { songName: "Fourth - Salam-e-Ishq", filePath: "song/4.mp3", coverPath: "./images/covers/4.jpg" },
-    { songName: "Fifth -Salam-e-Ishq", filePath: "song/5.mp3", coverPath: "./images/covers/5.jpg" },
-    { songName: "Sixth - Salam-e-Ishq", filePath: "song/6.mp3", coverPath: "./images/covers/6.jpg" },
-    { songName: "Seven - Salam-e-Ishq", filePath: "song/7.mp3", coverPath: "./images/covers/7.jpg" },
-    { songName: "Eighth - Salam-e-Ishq", filePath: "song/8.mp3", coverPath: "./images/covers/8.jpg" },
-    { songName: "Ninth - Salam-e-Ishq", filePath: "song/9.mp3", coverPath: "./images/covers/9.jpg" },
-    { songName: "Tenth - Salam-e-Ishq", filePath: "song/9.mp3", coverPath: "./images/covers/10.jpg" },
+    { songName: "Borne", filePath: "song/1.mp3", coverPath: "./images/covers/1.jpg" },
+    { songName: "Sharks", filePath: "song/2.mp3", coverPath: "./images/covers/2.jpg" },
+    { songName: "Zack merci", filePath: "song/3.mp3", coverPath: "./images/covers/3.jpg" },
+    { songName: "Uplink", filePath: "song/4.mp3", coverPath: "./images/covers/4.jpg" },
+    { songName: "Strybo", filePath: "song/5.mp3", coverPath: "./images/covers/5.jpg" },
+    { songName: "What I Say", filePath: "song/6.mp3", coverPath: "./images/covers/6.jpg" },
+    { songName: "Syntact", filePath: "song/7.mp3", coverPath: "./images/covers/7.jpg" },
+    { songName: "Culture Code", filePath: "song/8.mp3", coverPath: "./images/covers/8.jpg" },
+    { songName: "Used-Forget", filePath: "song/9.mp3", coverPath: "./images/covers/9.jpg" },
+    { songName: "Nivro", filePath: "song/9.mp3", coverPath: "./images/covers/10.jpg" },
 ]
 
 songItems.forEach((element, i) => {
