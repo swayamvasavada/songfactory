@@ -65,7 +65,9 @@ function makeAllPlays() {
 songItemPlayBtn.forEach((element) => {
     element.addEventListener('click', (e) => {
         makeAllPlays();
+        const prevSongIndex = songIndex;
         songIndex = parseInt(e.target.id);
+
         masterSongName.innerText = songs[songIndex].songName
 
         if (audioElement.currentTime <= 0) {
@@ -84,7 +86,13 @@ songItemPlayBtn.forEach((element) => {
             e.target.classList.remove('fa-circle-play');
             e.target.classList.add('fa-circle-pause');
             audioElement.src = `./songs/${songIndex + 1}.mp3`;
-            audioElement.currentTime = played
+
+            if (prevSongIndex === songIndex) {
+                audioElement.currentTime = played
+            } else {
+                audioElement.currentTime = 0;
+            }
+
             audioElement.play();
             gif.style.opacity = 1;
             masterPlay.classList.remove('fa-circle-play')
