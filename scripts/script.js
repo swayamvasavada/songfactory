@@ -1,4 +1,5 @@
 // Initialize the Variables
+let prevSongIndex;
 let songIndex = 0;
 let audioElement = new Audio('./songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay')
@@ -65,12 +66,11 @@ function makeAllPlays() {
 songItemPlayBtn.forEach((element) => {
     element.addEventListener('click', (e) => {
         makeAllPlays();
-        const prevSongIndex = songIndex;
-        songIndex = parseInt(e.target.id);
 
-        masterSongName.innerText = songs[songIndex].songName
 
         if (audioElement.currentTime <= 0) {
+            songIndex = parseInt(e.target.id);
+            masterSongName.innerText = songs[songIndex].songName
             audioElement.currentTime = 0
             e.target.classList.remove('fa-circle-play');
             e.target.classList.add('fa-circle-pause');
@@ -83,11 +83,14 @@ songItemPlayBtn.forEach((element) => {
         }
 
         else if (audioElement.paused) {
+            songIndex = parseInt(e.target.id);
+            masterSongName.innerText = songs[songIndex].songName
             e.target.classList.remove('fa-circle-play');
             e.target.classList.add('fa-circle-pause');
             audioElement.src = `./songs/${songIndex + 1}.mp3`;
 
             if (prevSongIndex === songIndex) {
+                console.log(prevSongIndex, songIndex);
                 audioElement.currentTime = played
             } else {
                 audioElement.currentTime = 0;
@@ -107,6 +110,8 @@ songItemPlayBtn.forEach((element) => {
             gif.style.opacity = 0;
             masterPlay.classList.remove('fa-circle-pause')
             masterPlay.classList.add('fa-circle-play')
+
+            prevSongIndex = songIndex;
         }
     })
 })
